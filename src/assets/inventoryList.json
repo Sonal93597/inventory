@@ -1,0 +1,15 @@
+[
+{"id": "1001", "name": "Core Banking Software", "description": "SQL Database", "dataSourceFormat":"Microsoft SQL Database", "price": 1000, "businessOwner":"Person A"},
+{"id": "1002", "name": "CRM System", "description": "SQL Database", "dataSourceFormat":"Microsoft SQL Database", "price": 2000, "businessOwner":"Person B"},
+{"id": "1003", "name": "Consumer LOS", "description": "", "dataSourceFormat":"Manual Report Extracts", "price": 3000, "businessOwner":"Person C"},
+{"id": "1004", "name": "Mortgage/HE LOS", "description": "SQL Database", "dataSourceFormat":"Microsoft SQL Database", "price": 4000, "businessOwner":"Person D"},
+{"id": "1005", "name": "ATM Terminal Transaction Tracker", "description": "SQL Database", "dataSourceFormat":"Excel Spreadsheet(s)", "price": 1000, "businessOwner":"Person E"},
+{"id": "1006", "name": "Document/Image Management Program", "description": "SQL Database", "dataSourceFormat":"Web Interface Only", "price": 2000, "businessOwner":"Person F"},
+{"id": "1007", "name": "Accounting GL Application", "description": "SQL Database", "dataSourceFormat":"Oracle Database", "price": 6000, "businessOwner":"Person A"},
+{"id": "1008", "name": "Investment Management", "description": "SQL Database", "dataSourceFormat":"Microsoft SQL Database", "price": 5000, "businessOwner":"Person B"},
+{"id": "1009", "name": "Digital Banking Program", "description": "SQL Database", "dataSourceFormat":"Manual Report Extracts", "price": 2000, "businessOwner":"Person A"},
+{"id": "1010", "name": "Third Party Mobile App Management", "description": "SQL Database", "dataSourceFormat":"Manual Report Extracts", "price": 2000, "businessOwner":"Person A"},
+{"id": "1011", "name": "Wealth Management Application", "description": "SQL Database", "dataSourceFormat":"Microsoft SQL Database", "price": 2000, "businessOwner":"Person A"}
+]
+
+

@@ -1,0 +1,58 @@
+<mat-toolbar class="mb-2" mat-dialog-title color="primary">
+  <mat-toolbar-row>
+    <h2>{{isUpdate ? 'Edit Inventory' : 'Add Inventory'}}</h2>
+  </mat-toolbar-row>
+</mat-toolbar>
+<form #inventoryForm="ngForm">
+  <mat-dialog-content class="mat-typography" fxLayout="row wrap" fxLayoutAlign="space-between center">
+    <!-- Name -->
+    <div fxLayout="column" fxFlex="100">
+      <mat-form-field>
+        <input matInput type="text" placeholder="Name" #nameModel="ngModel" required name="name"
+          [(ngModel)]="addInventoryReq.name">
+       <mat-error *ngIf="nameModel.hasError('required')">
+                   This field is Required
+       </mat-error>
+      </mat-form-field>
+    </div>
+    <!-- Data Source -->
+    <div fxLayout="column" fxFlex="100">
+      <mat-form-field>
+        <input matInput type="text" placeholder="Data Source Format" #dataModel="ngModel" name="dataSource"
+          [(ngModel)]="addInventoryReq.dataSourceFormat">
+      </mat-form-field>
+    </div>
+    <!-- Descrption -->
+    <div fxLayout="column" fxFlex="100">
+      <mat-form-field>
+        <textarea matInput type="text" placeholder="Description" #descriptionModel="ngModel" required name="description"
+          [(ngModel)]="addInventoryReq.description"></textarea>
+            <mat-error *ngIf="descriptionModel.hasError('required')">
+              This field is Required
+            </mat-error>
+      </mat-form-field>
+    </div>
+    <!-- Business Owner -->
+    <div fxLayout="column" fxFlex="100">
+      <mat-form-field>
+        <input matInput type="text" placeholder="Business Owner" #businessOwnerModel="ngModel" name="businessOwnerM"
+          [(ngModel)]="addInventoryReq.businessOwner">
+      </mat-form-field>
+    </div>
+    <!-- Price -->
+    <div fxLayout="column" fxFlex="100">
+      <mat-form-field>
+    <input matInput type="number" placeholder="Price" #priceModel="ngModel" required name="price"
+      [(ngModel)]="addInventoryReq.price">
+      <mat-error *ngIf="priceModel.hasError('required')">
+        This field is Required
+      </mat-error>
+      </mat-form-field>
+    </div>
+  </mat-dialog-content>
+  <mat-dialog-actions fxLayoutAlign="end center">
+    <button mat-raised-button mat-dialog-close color="accent">Cancel</button>
+    <button mat-raised-button (click)="addInventory()" class="m-2" color="primary" type="button"
+      [disabled]="inventoryForm.invalid">{{isUpdate ? 'Update' : 'Add'}}</button>
+  </mat-dialog-actions>
+</form>
